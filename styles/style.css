@@ -423,7 +423,7 @@ textarea {
 /*PROJECT*/
 .project{
     margin-top: 130px;
-    margin-bottom: 130px;
+    padding-bottom: 130px;
 }
 .project__content{
     display: flex;
