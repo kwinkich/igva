@@ -634,6 +634,14 @@ td{
         flex-direction: column;
     }
 
+    .header__menu-block {
+        gap: 10px;
+    }
+
+    .main{
+        margin-top: 40px;
+    }
+
     .header__logo-block,
     .footer__logo-block{
         margin-bottom: 30px;
@@ -654,11 +662,6 @@ td{
 
 
 @media (max-width: 560px){
-
-    .header__menu-block {
-        gap: 10px;
-    }
-
     .about__content,
     .vision__content,
     .mission__content,
@@ -676,11 +679,6 @@ td{
     .vision__img img,
     .mission__img img{
         width: 390px;
-    }
-
-
-    .main{
-        margin-top: 40px;
     }
 
     .main__title{
