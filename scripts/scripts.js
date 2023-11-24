@@ -31,7 +31,6 @@ gsap.from(".about__img", {
         start: "top 350px",
         end: "bottom 900px",
         scrub: 3.2,
-        markers: true
     },
     x: 100,
     opacity: 0,
@@ -61,7 +60,6 @@ gsap.from(".vision__img", {
         start: "top 350px",
         end: "bottom 900px",
         scrub: 3.2,
-        markers: true
     },
     x: -100,
     opacity: 0,
@@ -91,7 +89,6 @@ gsap.from(".mission__img", {
         start: "top 350px",
         end: "bottom 900px",
         scrub: 3.2,
-        markers: true
     },
     x: 100,
     opacity: 0,
@@ -108,7 +105,6 @@ gsap.from(".projects__title", {
         start: "top 350px",
         end: "top 450px",
         scrub: 3.2,
-        markers: true
     },
     x: -100,
     opacity: 0,
@@ -122,7 +118,6 @@ gsap.from(".project__count", {
         start: "top 350px",
         end: "top 450px",
         scrub: 3.2,
-        markers: true
     },
     x: 100,
     opacity: 0,
@@ -137,7 +132,6 @@ gsap.from(".project__img", {
         start: "top 350px",
         end: "top 450px",
         scrub: 3.2,
-        markers: true
     },
     y: 100,
     opacity: 0,
@@ -152,7 +146,6 @@ gsap.from(".project__info-text", {
         start: "top 350px",
         end: "top 450px",
         scrub: 3.2,
-        markers: true
     },
     y: 100,
     opacity: 0,
@@ -182,7 +175,6 @@ gsap.from(".contacts__img", {
         start: "top 350px",
         end: "bottom 900px",
         scrub: 3.2,
-        markers: true
     },
     x: 100,
     opacity: 0,
@@ -190,3 +182,22 @@ gsap.from(".contacts__img", {
     stagger: 0.1,
     ease: "power2.out",
 });
+
+
+
+gsap.from(".project__title, .project__info-title, .project__tr", {
+    y: 100,
+    opacity: 0,
+    duration: 1,
+    stagger: 0.2,
+    ease: "power2.out",
+});
+
+gsap.from(".project__img-block", {
+    x: 100,
+    opacity: 0,
+    duration: 1,
+    stagger: 0.2,
+    ease: "power2.out",
+});
+
