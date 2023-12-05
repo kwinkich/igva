@@ -171,6 +171,7 @@ textarea {
     font-weight: var(--semibold-M);
     background-color: var(--acent-color);
     transition: all 0.5s ease-in-out;
+    cursor: pointer;
 }
 .green-btn:hover {
     background-color: transparent;
@@ -195,7 +196,13 @@ textarea {
 .dark-green-border {
     border: 1px solid var(--dark-acent-color) !important;
 }
+.hidden{
+    display: none;
+}
 
+.block{
+    display: block !important;
+}
 
 /*HEADER*/
 .header{

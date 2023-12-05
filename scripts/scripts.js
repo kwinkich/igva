@@ -1,3 +1,43 @@
+localStorage.setItem('displayProj', false);
+
+const hiddenProj = document.getElementById('hidden');
+const hiddenProj1 = document.getElementById('hidden1');
+const hiddenProj2 = document.getElementById('hidden2');
+const hiddenProj3 = document.getElementById('hidden3');
+const hiddenProj4 = document.getElementById('hidden4');
+
+const btnLoad = document.getElementById('loadNewProj');
+
+let displayProj = localStorage.getItem('displayProj');
+
+btnLoad.addEventListener('click', () => {
+    if(displayProj === 'false'){
+        hiddenProj.classList.add('block');
+        hiddenProj1.classList.add('block');
+        hiddenProj2.classList.add('block');
+        hiddenProj3.classList.add('block');
+        hiddenProj4.classList.add('block');
+
+        localStorage.setItem('displayProj', true);
+        displayProj = localStorage.getItem('displayProj');
+        btnLoad.innerHTML = 'Hide projects';
+    } else if (displayProj === 'true'){
+        hiddenProj.classList.remove('block');
+        hiddenProj1.classList.remove('block');
+        hiddenProj2.classList.remove('block');
+        hiddenProj3.classList.remove('block');
+        hiddenProj4.classList.remove('block');
+
+        localStorage.setItem('displayProj', false);
+        displayProj = localStorage.getItem('displayProj');
+        btnLoad.innerHTML = 'See all projects';
+    } else {
+        console.log('error');
+    }
+})
+
+
+
 gsap.from(".header", {
     opacity: 0,
     duration: 1,
@@ -39,7 +79,6 @@ gsap.from(".about__img", {
     ease: "power2.out",
 });
 
-
 gsap.from(".vision__title, .vision__text-info", {
     scrollTrigger: {
         trigger: ".vision",
@@ -67,7 +106,6 @@ gsap.from(".vision__img", {
     stagger: 0.1,
     ease: "power2.out",
 });
-
 
 gsap.from(".mission__title, .mission__text-info", {
     scrollTrigger: {
@@ -97,8 +135,6 @@ gsap.from(".mission__img", {
     ease: "power2.out",
 });
 
-
-
 gsap.from(".projects__title", {
     scrollTrigger: {
         trigger: ".projects",
@@ -112,6 +148,7 @@ gsap.from(".projects__title", {
     stagger: 0.1,
     ease: "power2.out",
 });
+
 gsap.from(".project__count", {
     scrollTrigger: {
         trigger: ".projects",
@@ -154,7 +191,6 @@ gsap.from(".project__info-text", {
     ease: "power2.out",
 });
 
-
 gsap.from(".contacts__title, .contacts__text-info", {
     scrollTrigger: {
         trigger: ".contacts",
@@ -182,8 +218,6 @@ gsap.from(".contacts__img", {
     stagger: 0.1,
     ease: "power2.out",
 });
-
-
 
 gsap.from(".project__title, .project__info-title, .project__tr", {
     y: 100,
