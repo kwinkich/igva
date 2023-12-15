@@ -95,7 +95,7 @@ gsap.from(".mission__img", {
     ease: "power2.out",
 });
 
-gsap.from(".projects__title", {
+gsap.from(".projects__title, .projects__country-title", {
     scrollTrigger: {
         trigger: ".projects",
         start: "top 350px",
@@ -194,4 +194,3 @@ gsap.from(".project__img-block", {
     stagger: 0.2,
     ease: "power2.out",
 });
-

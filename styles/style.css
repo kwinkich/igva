@@ -19,6 +19,7 @@
     --52px: 52px;
     --46px: 46px;
     --36px: 36px;
+    --30px: 30px;
     --28px: 28px;
     --24px: 24px;
     --22px: 22px;
@@ -154,6 +155,11 @@ textarea {
     font-weight: var(--bold-M);
     color: var(--dark-acent-color);
     margin-bottom: 30px;
+}
+.h3-title{
+    font-size: var(--30px);
+    font-weight: var(--medium-M);
+    color: var(--dark-acent-color);
 }
 .text-info {
     font-family: var(--Raleway-ff);
@@ -329,6 +335,9 @@ textarea {
 .projects__title{
     margin-bottom: 0;
 }
+.projects__country-title{
+    margin-bottom: 30px;
+}
 .project__count {
     font-size: var(--18px);
     font-weight: var(--regular-M);
@@ -344,6 +353,9 @@ textarea {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 50px;
 }
+.projects__blocks:not(:last-child) {
+    margin-bottom: 150px;
+}
 .project__block {
     max-width: 380px;
     color: var(--dark-text);
@@ -355,6 +367,7 @@ textarea {
     font-family: var(--Raleway-ff);
     font-size: var(--22px);
     font-weight: var(--regular-R400);
+    font-variant-numeric: lining-nums proportional-nums;
 }
 .project__info-text:not(:last-child){
     margin-bottom: 5px;
@@ -449,6 +462,10 @@ textarea {
 
 .project__img-block img{
     max-width: 100%;
+}
+
+.project__tr{
+    font-variant-numeric: lining-nums proportional-nums;
 }
 
 .project__title{
